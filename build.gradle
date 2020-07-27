@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.jhw.personalization'
+
+//mainClassName = 'com.jhw.personalization.Main'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+
+dependencies {
+    testCompile 'junit:junit:4.13'
+
+    implementation project(':derivable-icons')
+    
+    compile group: 'com.twelvemonkeys.imageio', name: 'imageio-core', version: '3.5'
+    compile group: 'org.swinglabs', name: 'swingx', version: '1.6.1'
+    implementation 'net.java.timingframework:timingframework-swing:7.3.0'
+
+}

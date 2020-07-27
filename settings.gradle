@@ -1,0 +1,6 @@
+rootProject.name = 'Standards'
+
+include ':derivable-icons'
+
+project(':derivable-icons').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\Material\\Derivable Icons" as File
+
