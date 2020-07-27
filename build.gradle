@@ -2,9 +2,7 @@ plugins {
     id 'java'
 }
 
-group = 'com.jhw.personalization'
-
-//mainClassName = 'com.jhw.personalization.Main'
+group = 'com.jhw.swing'
 
 repositories {
     jcenter()
