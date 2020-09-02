@@ -25,6 +25,7 @@ public class MaterialIcons {
     //ICONS SVG
     public static final DerivableIcon ARROW_DROP_LEFT = loadSVG("/imgs/arrow_left.svg").deriveIcon(10);
     public static final DerivableIcon ARROW_DROP_RIGHT = loadSVG("/imgs/arrow_right.svg").deriveIcon(10);
+    public static final DerivableIcon EXCEL = loadSVG("/imgs/excel.svg").deriveIcon(18);
 
     //TECNOLOGIES
     public static final DerivableIcon TEC_ADOBE = loadSVG("/imgs/tec/adobe.svg").deriveIcon(18);
