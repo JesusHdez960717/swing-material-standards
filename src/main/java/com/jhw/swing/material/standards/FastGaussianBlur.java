@@ -29,10 +29,19 @@ public class FastGaussianBlur {
      * @return
      */
     public static BufferedImage blur(BufferedImage image, double radius) {
+        return blur(image, radius, false);
+    }
+
+    public static BufferedImage blur(BufferedImage image, double radius, boolean all) {
         final int w = image.getWidth();
         final int h = image.getHeight();
         ConvolveWithEdgeOp filterTrue = getGaussianBlurFilter((float) radius, true);
         ConvolveWithEdgeOp filterFalse = getGaussianBlurFilter((float) radius, false);
+
+        if (all) {//si hay que pintarla toda ya, si no, uso varios algoritmos...
+            image = filterTrue.filter(image, null);
+            return filterFalse.filter(image, null);
+        }
 
         if (w < 150 && h < 150) {//para sombras pequennas usar el clasico con la imagen completa
             image = filterTrue.filter(image, null);
