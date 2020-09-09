@@ -48,6 +48,11 @@ public class MaterialShadow {
      */
     public static final double ELEVATION_HIGHTEST = 2;
 
+    /**
+     * Hight shadow, too big for use, only in specifics cases.
+     */
+    public static final double ELEVATION_TOP = 5;
+
     //Solo con dos frames y la interpolacion automatica se hacen el resto de las sombras con una calidad excelente
     private static final KeyFrames<Float> opacityKeyFrame = new KeyFrames.Builder<>(0f)
             .addFrame(0.34f, 1 / 5.0)
@@ -95,6 +100,8 @@ public class MaterialShadow {
                 return MaterialShadow.renderShadow(width, height, level, radius);
             case CIRCULAR:
                 return MaterialShadow.renderCircularShadow(width, height, level);
+            case ROUND:
+                return MaterialShadow.renderRoundShadow(width, height, level);
             default:
                 return MaterialShadow.renderShadow(width, height, level, radius);
         }
@@ -126,6 +133,10 @@ public class MaterialShadow {
      * circular component of the given radius.
      */
     public static BufferedImage renderShadow(int width, int height, double level, int borderRadius) {
+        if (level < ELEVATION_NONE || level > ELEVATION_TOP) {
+            throw new IllegalArgumentException("Shadow level must be between " + ELEVATION_NONE + " and " + ELEVATION_TOP + " (inclusive)");
+        }
+
         BufferedImage shadow = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
         if (width > 0 && height > 0 && level != ELEVATION_NONE) {
             shadow = makeShadow(shadow, opacityKeyFrame.getInterpolatedValueAt(level / 5), radiusKeyFrame.getInterpolatedValueAt(level / 5),
@@ -146,15 +157,24 @@ public class MaterialShadow {
      * circular component of the given radius.
      */
     public static BufferedImage renderCircularShadow(int width, int height, double level) {
-        if (level < 0 || level > 5) {
-            throw new IllegalArgumentException("Shadow level must be between 0 and 2 (inclusive)");
+        if (level < ELEVATION_NONE || level > ELEVATION_TOP) {
+            throw new IllegalArgumentException("Shadow level must be between " + ELEVATION_NONE + " and " + ELEVATION_TOP + " (inclusive)");
         }
 
         BufferedImage shadow = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
-        if (level != 0) {
-            shadow = makeCircularShadow(shadow, opacityKeyFrame.getInterpolatedValueAt(level / 5), radiusKeyFrame.getInterpolatedValueAt(level / 5),
-                    0, offsetKeyFrame.getInterpolatedValueAt(level / 5));
+        shadow = makeCircularShadow(shadow, opacityKeyFrame.getInterpolatedValueAt(level / 5), radiusKeyFrame.getInterpolatedValueAt(level / 5),
+                0, offsetKeyFrame.getInterpolatedValueAt(level / 5));
+        return shadow;
+    }
+
+    public static BufferedImage renderRoundShadow(int width, int height, double level) {
+        if (level < ELEVATION_NONE || level > ELEVATION_TOP) {
+            throw new IllegalArgumentException("Shadow level must be between " + ELEVATION_NONE + " and " + ELEVATION_TOP + " (inclusive)");
         }
+
+        BufferedImage shadow = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+        shadow = makeRoundShadow(shadow, opacityKeyFrame.getInterpolatedValueAt(level / 5), radiusKeyFrame.getInterpolatedValueAt(level / 5),
+                0, offsetKeyFrame.getInterpolatedValueAt(level / 5));
         return shadow;
     }
 
@@ -173,11 +193,36 @@ public class MaterialShadow {
         Graphics2D g2 = shadow.createGraphics();
         g2.setColor(new Color(0, 0, 0, opacity));
 
-        g2.fill(new Ellipse2D.Float(OFFSET_LEFT + leftOffset, OFFSET_TOP + topOffset,
-                shadow.getWidth() - OFFSET_LEFT - OFFSET_RIGHT, shadow.getHeight() - OFFSET_TOP - OFFSET_BOTTOM));
+        float w = shadow.getWidth() - OFFSET_LEFT - OFFSET_RIGHT;
+        float h = shadow.getHeight() - OFFSET_TOP - OFFSET_BOTTOM;
+        float x = OFFSET_LEFT + leftOffset;
+        float y = OFFSET_TOP + topOffset;
+
+        w = h = Math.min(w, h);
+        x = (shadow.getWidth() - w) / 2;
+        y = (shadow.getHeight() - h) / 2;
+
+        g2.fill(new Ellipse2D.Float(x, y,
+                w, h));
         g2.dispose();
 
-        return FastGaussianBlur.blur(shadow, (int) radius);
+        return FastGaussianBlur.blur(shadow, (int) radius, true);
+    }
+
+    private static BufferedImage makeRoundShadow(BufferedImage shadow, float opacity, float radius, float leftOffset, float topOffset) {
+        Graphics2D g2 = shadow.createGraphics();
+        g2.setColor(new Color(0, 0, 0, opacity));
+
+        float w = shadow.getWidth() - OFFSET_LEFT - OFFSET_RIGHT;
+        float h = shadow.getHeight() - OFFSET_TOP - OFFSET_BOTTOM;
+        float x = OFFSET_LEFT + leftOffset;
+        float y = OFFSET_TOP + topOffset;
+
+        g2.fill(new Ellipse2D.Float(x, y,
+                w, h));
+        g2.dispose();
+
+        return FastGaussianBlur.blur(shadow, (int) radius, true);
     }
 
     /**
@@ -191,9 +236,13 @@ public class MaterialShadow {
          */
         SQUARE,
         /**
+         * Sombra completamente circular centrada.
+         */
+        CIRCULAR,
+        /**
          * A circular, rounded shadow. Mainly for specific components like FABs.
          */
-        CIRCULAR
+        ROUND
     }
 
 }
