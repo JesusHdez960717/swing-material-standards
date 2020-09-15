@@ -38,12 +38,12 @@ public class FastGaussianBlur {
         ConvolveWithEdgeOp filterTrue = getGaussianBlurFilter((float) radius, true);
         ConvolveWithEdgeOp filterFalse = getGaussianBlurFilter((float) radius, false);
 
-        if (all) {//si hay que pintarla toda ya, si no, uso varios algoritmos...
+        if (all) {//si hay que pintarla toda ya, si no, uso varios algoritmos... se puede unir con el if de abajo pero asi se ve bien la diferencia
             image = filterTrue.filter(image, null);
             return filterFalse.filter(image, null);
         }
 
-        if (w < 150 && h < 150) {//para sombras pequennas usar el clasico con la imagen completa
+        if (w < 150 || h < 150) {//para sombras pequennas usar el clasico con la imagen completa
             image = filterTrue.filter(image, null);
             return filterFalse.filter(image, null);
         } else {//para imagenes grandes picarla por pedazos y despues unirla
@@ -74,7 +74,7 @@ public class FastGaussianBlur {
         }
     }
 
-    public static ConvolveWithEdgeOp getGaussianBlurFilter(float radius, boolean horizontal) {
+    private static ConvolveWithEdgeOp getGaussianBlurFilter(float radius, boolean horizontal) {
         radius++;
         int radiusInt = (int) Math.ceil(radius);
         int size = radiusInt * 2 + 1;
