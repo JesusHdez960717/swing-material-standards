@@ -251,6 +251,18 @@ public class MaterialColors {
     public static final Color DEEPORANGEA_400 = Color.decode("#ff3d00");
     public static final Color DEEPORANGEA_700 = Color.decode("#dd2c00");
 
+    public static final Color GREY_50 = Color.decode("#fafafa");
+    public static final Color GREY_100 = Color.decode("#f5f5f5");
+    public static final Color GREY_200 = Color.decode("#eeeeee");
+    public static final Color GREY_300 = Color.decode("#e0e0e0");
+    public static final Color GREY_400 = Color.decode("#bdbdbd");
+    public static final Color GREY_500 = Color.decode("#9e9e9e");
+    public static final Color GREY_600 = Color.decode("#757575");
+    public static final Color GREY_700 = Color.decode("#616161");
+    public static final Color GREY_800 = Color.decode("#424242");
+    public static final Color GREY_850 = Color.decode("#313131");
+    public static final Color GREY_900 = Color.decode("#212121");
+
     public static final Color BROWN_50 = Color.decode("#efebe9");
     public static final Color BROWN_100 = Color.decode("#d7ccc8");
     public static final Color BROWN_200 = Color.decode("#bcaaa4");
@@ -273,54 +285,43 @@ public class MaterialColors {
     public static final Color BLUEGREY_800 = Color.decode("#37474f");
     public static final Color BLUEGREY_900 = Color.decode("#263238");
 
-    public static final Color GREY_50 = Color.decode("#fafafa");
-    public static final Color GREY_100 = Color.decode("#f5f5f5");
-    public static final Color GREY_200 = Color.decode("#eeeeee");
-    public static final Color GREY_300 = Color.decode("#e0e0e0");
-    public static final Color GREY_400 = Color.decode("#bdbdbd");
-    public static final Color GREY_500 = Color.decode("#9e9e9e");
-    public static final Color GREY_600 = Color.decode("#757575");
-    public static final Color GREY_700 = Color.decode("#616161");
-    public static final Color GREY_800 = Color.decode("#424242");
-    public static final Color GREY_850 = Color.decode("#313131");
-    public static final Color GREY_900 = Color.decode("#212121");
+    //Cosmo color
+    public static final Color DARKLY_STRONG_BLUE = new Color(40, 65, 91);
+    public static final Color DARKLY_BLUE = new Color(55, 90, 127);
+    public static final Color DARKLY_RED = new Color(231, 76, 60);
+    public static final Color DARKLY_ORANGE = new Color(243, 156, 18);
+    public static final Color DARKLY_STRONG_GREEN = new Color(0, 112, 83);
+    public static final Color DARKLY_GREEN = new Color(0, 188, 140);
+    public static final Color DARKLY_GRAY = new Color(173, 181, 189);
 
     public static final Color BLACK = Color.BLACK;
-    public static final Color WHITE = Color.WHITE;
-
-    public static final Color TRANSPARENT = new Color(0, 0, 0, 0);
     public static final Color FULLBLACK = Color.BLACK;
     public static final Color DARK_BLACK = new Color(0, 0, 0, 0.87f);
     public static final Color LIGHT_BLACK = new Color(0, 0, 0, 0.54f);
     public static final Color MIN_BLACK = new Color(0, 0, 0, 0.26f);
     public static final Color FAINT_BLACK = new Color(0, 0, 0, 0.12f);
+
+    public static final Color WHITE = Color.WHITE;
     public static final Color FULLWHITE = Color.WHITE;
     public static final Color DARK_WHITE = new Color(1, 1, 1, 0.87f);
     public static final Color LIGHT_WHITE = new Color(1, 1, 1, 0.54f);
+    public static final Color TRANSPARENT = new Color(0, 0, 0, 0);
 
-    //Cosmo color
-    public static final Color DARKLY_STRONG_BLUE = new Color(40, 65, 91);
-    public static final Color DARKLY_BLUE = new Color(55, 90, 127);
-    public static final Color COSMO_STRONG_BLUE = new Color(25, 103, 190);
-    public static final Color COSMO_BLUE = new Color(39, 128, 227);
     public static final Color COSMO_LIGTH_BLUE = new Color(195, 219, 247);
-    public static final Color DARKLY_RED = new Color(231, 76, 60);
-    public static final Color COSMO_RED = new Color(255, 0, 57);
+    public static final Color COSMO_BLUE = new Color(39, 128, 227);
+    public static final Color COSMO_STRONG_BLUE = new Color(25, 103, 190);
     public static final Color COSMO_LIGHT_RED = new Color(255, 184, 200);
-    public static final Color COSMO_PURPLE = new Color(153, 84, 187);
+    public static final Color COSMO_RED = new Color(255, 0, 57);
     public static final Color COSMO_LIGHT_PURPLE = new Color(226, 207, 236);
-    public static final Color DARKLY_ORANGE = new Color(243, 156, 18);
-    public static final Color COSMO_ORANGE = new Color(255, 117, 24);
+    public static final Color COSMO_PURPLE = new Color(153, 84, 187);
     public static final Color COSMO_LIGHT_ORANGE = new Color(255, 216, 190);
-    public static final Color DARKLY_STRONG_GREEN = new Color(0, 112, 83);
-    public static final Color DARKLY_GREEN = new Color(0, 188, 140);
-    public static final Color COSMO_GREEN = new Color(61, 176, 23);
+    public static final Color COSMO_ORANGE = new Color(255, 117, 24);
     public static final Color COSMO_LIGHT_GREEN = new Color(201, 235, 190);
-    public static final Color COSMO_LIGTH_GRAY = new Color(248, 249, 250);
-    public static final Color COSMO_MEDIUM_GRAY = new Color(218, 218, 218);
-    public static final Color COSMO_STRONG_GRAY = new Color(199, 200, 200);
-    public static final Color COSMO_DARK_GRAY = new Color(199, 200, 200);
-    public static final Color DARKLY_GRAY = new Color(173, 181, 189);
+    public static final Color COSMO_GREEN = new Color(61, 176, 23);
+    //public static final Color COSMO_LIGTH_GRAY = new Color(248, 249, 250);
+    //public static final Color COSMO_MEDIUM_GRAY = new Color(218, 218, 218);
+    //public static final Color COSMO_STRONG_GRAY = new Color(199, 200, 200);
+    //public static final Color COSMO_DARK_GRAY = new Color(199, 200, 200);
     public static final Color COSMO_BLACK = new Color(55, 58, 60);
 
     public static Color bleach(Color color, float amount) {

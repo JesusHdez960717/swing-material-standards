@@ -1,6 +1,5 @@
-rootProject.name = 'Standards'
+rootProject.name = 'swing-material-standards'
 
-include ':derivable-icons'
-
-project(':derivable-icons').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\Material\\Derivable Icons" as File
+include ':swing-derivable_icons'
+project(':swing-derivable_icons').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\swing-derivable_icons" as File
 
