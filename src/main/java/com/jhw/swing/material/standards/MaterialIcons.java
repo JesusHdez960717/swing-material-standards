@@ -43,6 +43,23 @@ public class MaterialIcons {
     public static final DerivableIcon TEC_NB = loadSVG("/imgs/tec/nb.svg").deriveIcon(18);
     public static final DerivableIcon TEC_XAMPP = loadSVG("/imgs/tec/xampp.svg").deriveIcon(18);
 
+    //Characters converted
+    public static final DerivableIcon HASHTAG = new IconTTF(MaterialFontRoboto.BOLD, '#').deriveIcon(24f);
+    public static final DerivableIcon ARROBA = new IconTTF(MaterialFontRoboto.BOLD, '@').deriveIcon(22f);
+    
+    //NUMBERS 0 - 9    
+    public static final DerivableIcon NOMBER_CERO = new IconTTF(MaterialFontRoboto.BOLD, '0').deriveIcon(24f);
+    public static final DerivableIcon NOMBER_ONE = new IconTTF(MaterialFontRoboto.BOLD, '1').deriveIcon(24f);
+    public static final DerivableIcon NOMBER_TWO = new IconTTF(MaterialFontRoboto.BOLD, '2').deriveIcon(24f);
+    public static final DerivableIcon NOMBER_THRE = new IconTTF(MaterialFontRoboto.BOLD, '3').deriveIcon(24f);
+    public static final DerivableIcon NOMBER_FOUR = new IconTTF(MaterialFontRoboto.BOLD, '4').deriveIcon(24f);
+    public static final DerivableIcon NOMBER_FIVE = new IconTTF(MaterialFontRoboto.BOLD, '5').deriveIcon(24f);
+    public static final DerivableIcon NOMBER_SIX = new IconTTF(MaterialFontRoboto.BOLD, '6').deriveIcon(24f);
+    public static final DerivableIcon NOMBER_SEVEN = new IconTTF(MaterialFontRoboto.BOLD, '7').deriveIcon(24f);
+    public static final DerivableIcon NOMBER_EIGHT = new IconTTF(MaterialFontRoboto.BOLD, '8').deriveIcon(24f);
+    public static final DerivableIcon NOMBER_NINE = new IconTTF(MaterialFontRoboto.BOLD, '9').deriveIcon(24f);
+    
+
     //DEFAULT ICONS VIA TTF
     public static final DerivableIcon _3D_ROTATION = new IconTTF((char) 59469);
     public static final DerivableIcon AC_UNIT = new IconTTF((char) 60219);
