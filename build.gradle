@@ -13,7 +13,7 @@ repositories {
 dependencies {
     testCompile 'junit:junit:4.13'
 
-    implementation project(':derivable-icons')
+    implementation project(':swing-derivable_icons')
     
     compile group: 'com.twelvemonkeys.imageio', name: 'imageio-core', version: '3.5'
     compile group: 'org.swinglabs', name: 'swingx', version: '1.6.1'
