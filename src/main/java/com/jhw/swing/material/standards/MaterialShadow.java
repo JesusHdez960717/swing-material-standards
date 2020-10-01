@@ -4,13 +4,14 @@ import java.awt.*;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.RoundRectangle2D;
 import java.awt.image.BufferedImage;
+import java.io.Serializable;
 import org.jdesktop.core.animation.timing.KeyFrames;
 
 /**
  * A renderer for Material shadows. Shadows are a sign of elevation, and help
  * distinguishing elements inside a Material-based GUI.
  */
-public class MaterialShadow {
+public class MaterialShadow implements Serializable {
 
     /**
      * The default offset between the border of the shadow and the top of a
