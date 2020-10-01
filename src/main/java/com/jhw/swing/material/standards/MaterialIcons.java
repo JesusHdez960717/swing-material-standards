@@ -1000,7 +1000,7 @@ public class MaterialIcons {
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("SVG " + svgResourcePath + " wasn't loaded");
-            return new IconTTF((char) 58285);//broken image icon
+            return new IconTTF(MaterialIconsFont.ICON_FONT, (char) 58285);//broken image icon
         }
     }
 
