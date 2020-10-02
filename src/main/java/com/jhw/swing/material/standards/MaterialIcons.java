@@ -1,7 +1,9 @@
 package com.jhw.swing.material.standards;
 
+import com.jhw.swing.derivable_icons.IconTTF;
+import com.jhw.swing.derivable_icons.DerivableIcon;
+import com.jhw.swing.derivable_icons.IconSVG;
 import java.io.InputStream;
-import com.jhw.swing.utils.icons.*;
 
 //don't delete, it's for the coment at the end of the class
 import java.lang.reflect.Field;
@@ -48,16 +50,16 @@ public class MaterialIcons {
     public static final DerivableIcon ARROBA = new IconTTF(MaterialFontRoboto.BOLD, '@').deriveIcon(22f);
 
     //NUMBERS 0 - 9    
-    public static final DerivableIcon NOMBER_CERO = new IconTTF(MaterialFontRoboto.BOLD, '0').deriveIcon(24f);
-    public static final DerivableIcon NOMBER_ONE = new IconTTF(MaterialFontRoboto.BOLD, '1').deriveIcon(24f);
-    public static final DerivableIcon NOMBER_TWO = new IconTTF(MaterialFontRoboto.BOLD, '2').deriveIcon(24f);
-    public static final DerivableIcon NOMBER_THRE = new IconTTF(MaterialFontRoboto.BOLD, '3').deriveIcon(24f);
-    public static final DerivableIcon NOMBER_FOUR = new IconTTF(MaterialFontRoboto.BOLD, '4').deriveIcon(24f);
-    public static final DerivableIcon NOMBER_FIVE = new IconTTF(MaterialFontRoboto.BOLD, '5').deriveIcon(24f);
-    public static final DerivableIcon NOMBER_SIX = new IconTTF(MaterialFontRoboto.BOLD, '6').deriveIcon(24f);
-    public static final DerivableIcon NOMBER_SEVEN = new IconTTF(MaterialFontRoboto.BOLD, '7').deriveIcon(24f);
-    public static final DerivableIcon NOMBER_EIGHT = new IconTTF(MaterialFontRoboto.BOLD, '8').deriveIcon(24f);
-    public static final DerivableIcon NOMBER_NINE = new IconTTF(MaterialFontRoboto.BOLD, '9').deriveIcon(24f);
+    public static final DerivableIcon NOMBER_0 = new IconTTF(MaterialFontRoboto.BOLD, '0').deriveIcon(24f);
+    public static final DerivableIcon NOMBER_1 = new IconTTF(MaterialFontRoboto.BOLD, '1').deriveIcon(24f);
+    public static final DerivableIcon NOMBER_2 = new IconTTF(MaterialFontRoboto.BOLD, '2').deriveIcon(24f);
+    public static final DerivableIcon NOMBER_3 = new IconTTF(MaterialFontRoboto.BOLD, '3').deriveIcon(24f);
+    public static final DerivableIcon NOMBER_4 = new IconTTF(MaterialFontRoboto.BOLD, '4').deriveIcon(24f);
+    public static final DerivableIcon NOMBER_5 = new IconTTF(MaterialFontRoboto.BOLD, '5').deriveIcon(24f);
+    public static final DerivableIcon NOMBER_6 = new IconTTF(MaterialFontRoboto.BOLD, '6').deriveIcon(24f);
+    public static final DerivableIcon NOMBER_7 = new IconTTF(MaterialFontRoboto.BOLD, '7').deriveIcon(24f);
+    public static final DerivableIcon NOMBER_8 = new IconTTF(MaterialFontRoboto.BOLD, '8').deriveIcon(24f);
+    public static final DerivableIcon NOMBER_9 = new IconTTF(MaterialFontRoboto.BOLD, '9').deriveIcon(24f);
 
     //DEFAULT ICONS VIA TTF
     public static final DerivableIcon _3D_ROTATION = new IconTTF(MaterialIconsFont.ICON_FONT, (char) 59469);

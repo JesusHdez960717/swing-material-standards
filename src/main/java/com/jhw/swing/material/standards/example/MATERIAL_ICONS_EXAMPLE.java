@@ -8,7 +8,7 @@ import java.util.Comparator;
 import java.util.Random;
 import javax.swing.JFrame;
 import javax.swing.UnsupportedLookAndFeelException;
-import com.jhw.swing.utils.icons.DerivableIcon;
+import com.jhw.swing.derivable_icons.DerivableIcon;
 import com.jhw.swing.material.standards.MaterialIcons;
 import java.awt.BorderLayout;
 import javax.swing.JLabel;
