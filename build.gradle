@@ -4,7 +4,7 @@ plugins {
 
 group = 'com.jhw.swing.material'
 
-version = '1.1.1.RELEASE.20201121'
+version = '1.1.2.RELEASE.20201121'
 
 repositories {
     jcenter()
