@@ -2,7 +2,9 @@ plugins {
     id 'java'
 }
 
-group = 'com.jhw.swing.material.standards'
+group = 'com.jhw.swing.material'
+
+version = '1.1.2.RELEASE.20201121'
 
 repositories {
     jcenter()
