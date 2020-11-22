@@ -40,6 +40,7 @@ public class MaterialIcons {
     public static final DerivableIcon TEC_GOOGLE = loadSVG("/imgs/tec/google.svg").deriveIcon(18);
     public static final DerivableIcon TEC_JAVA = loadSVG("/imgs/tec/java.svg").deriveIcon(18);
     public static final DerivableIcon TEC_JSON = loadSVG("/imgs/tec/json.svg").deriveIcon(18);
+    public static final DerivableIcon TEC_KANBAN = loadSVG("/imgs/tec/kanban.svg").deriveIcon(18);
     public static final DerivableIcon TEC_MYSQL = loadSVG("/imgs/tec/mysql.svg").deriveIcon(18);
     public static final DerivableIcon TEC_NB = loadSVG("/imgs/tec/nb.svg").deriveIcon(18);
     public static final DerivableIcon TEC_WHATSAPP = loadSVG("/imgs/tec/whatsapp.svg").deriveIcon(18);
