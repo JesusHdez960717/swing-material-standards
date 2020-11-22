@@ -32,17 +32,17 @@ public class MaterialIcons {
 
     //TECNOLOGIES
     public static final DerivableIcon TEC_ADOBE = loadSVG("/imgs/tec/adobe.svg").deriveIcon(18);
+    public static final DerivableIcon TEC_FLATICON = loadSVG("/imgs/tec/flaticon.svg").deriveIcon(18);
     public static final DerivableIcon TEC_FREEPICK = loadSVG("/imgs/tec/freepick.svg").deriveIcon(18);
     public static final DerivableIcon TEC_GIT = loadSVG("/imgs/tec/git.svg").deriveIcon(18);
-    public static final DerivableIcon TEC_GITKRAKEN = loadSVG("/imgs/tec/gitkraken.svg").deriveIcon(18);
     public static final DerivableIcon TEC_GITHUB = loadSVG("/imgs/tec/github.svg").deriveIcon(18);
+    public static final DerivableIcon TEC_GITKRAKEN = loadSVG("/imgs/tec/gitkraken.svg").deriveIcon(18);
+    public static final DerivableIcon TEC_GOOGLE = loadSVG("/imgs/tec/google.svg").deriveIcon(18);
     public static final DerivableIcon TEC_JAVA = loadSVG("/imgs/tec/java.svg").deriveIcon(18);
     public static final DerivableIcon TEC_JSON = loadSVG("/imgs/tec/json.svg").deriveIcon(18);
     public static final DerivableIcon TEC_MYSQL = loadSVG("/imgs/tec/mysql.svg").deriveIcon(18);
-    public static final DerivableIcon TEC_WHATSAPP = loadSVG("/imgs/tec/whatsapp.svg").deriveIcon(18);
-    public static final DerivableIcon TEC_GOOGLE = loadSVG("/imgs/tec/google.svg").deriveIcon(18);
-    public static final DerivableIcon TEC_FLATICON = loadSVG("/imgs/tec/flaticon.svg").deriveIcon(18);
     public static final DerivableIcon TEC_NB = loadSVG("/imgs/tec/nb.svg").deriveIcon(18);
+    public static final DerivableIcon TEC_WHATSAPP = loadSVG("/imgs/tec/whatsapp.svg").deriveIcon(18);
     public static final DerivableIcon TEC_XAMPP = loadSVG("/imgs/tec/xampp.svg").deriveIcon(18);
 
     //Characters converted
