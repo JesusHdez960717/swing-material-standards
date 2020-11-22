@@ -43,6 +43,8 @@ public class MaterialIcons {
     public static final DerivableIcon TEC_KANBAN = loadSVG("/imgs/tec/kanban.svg").deriveIcon(18);
     public static final DerivableIcon TEC_MYSQL = loadSVG("/imgs/tec/mysql.svg").deriveIcon(18);
     public static final DerivableIcon TEC_NB = loadSVG("/imgs/tec/nb.svg").deriveIcon(18);
+    public static final DerivableIcon TEC_SPRING = loadSVG("/imgs/tec/spring.svg").deriveIcon(18);
+    public static final DerivableIcon TEC_TOMCAT = loadSVG("/imgs/tec/tomcat.svg").deriveIcon(18);
     public static final DerivableIcon TEC_WHATSAPP = loadSVG("/imgs/tec/whatsapp.svg").deriveIcon(18);
     public static final DerivableIcon TEC_XAMPP = loadSVG("/imgs/tec/xampp.svg").deriveIcon(18);
 
