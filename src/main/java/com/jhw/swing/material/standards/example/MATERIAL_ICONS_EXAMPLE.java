@@ -1,6 +1,6 @@
-package com.jhw.swing.material.standards.example;
+package com.root101.swing.material.standards.example;
 
-import com.jhw.swing.material.standards.MaterialColors;
+import com.root101.swing.material.standards.MaterialColors;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.Arrays;
@@ -8,8 +8,8 @@ import java.util.Comparator;
 import java.util.Random;
 import javax.swing.JFrame;
 import javax.swing.UnsupportedLookAndFeelException;
-import com.jhw.swing.derivable_icons.DerivableIcon;
-import com.jhw.swing.material.standards.MaterialIcons;
+import com.root101.swing.derivable_icons.DerivableIcon;
+import com.root101.swing.material.standards.MaterialIcons;
 import java.awt.BorderLayout;
 import javax.swing.JLabel;
 import javax.swing.JPanel;

@@ -1,4 +1,4 @@
-package com.jhw.swing.material.standards.example;
+package com.root101.swing.material.standards.example;
 
 import java.awt.Color;
 import java.awt.GridLayout;
@@ -7,7 +7,7 @@ import java.lang.reflect.Modifier;
 import java.util.Random;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
-import com.jhw.swing.material.standards.MaterialColors;
+import com.root101.swing.material.standards.MaterialColors;
 import java.awt.BorderLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;

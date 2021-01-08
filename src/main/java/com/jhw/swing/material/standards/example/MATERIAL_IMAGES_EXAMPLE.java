@@ -1,4 +1,4 @@
-package com.jhw.swing.material.standards.example;
+package com.root101.swing.material.standards.example;
 
 import java.awt.GridLayout;
 import java.awt.image.BufferedImage;
@@ -6,7 +6,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import javax.swing.ImageIcon;
 import javax.swing.UnsupportedLookAndFeelException;
-import com.jhw.swing.material.standards.MaterialImages;
+import com.root101.swing.material.standards.MaterialImages;
 import java.awt.BorderLayout;
 import javax.swing.JFrame;
 import javax.swing.JLabel;

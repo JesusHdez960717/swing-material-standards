@@ -1,8 +1,8 @@
-package com.jhw.swing.material.standards;
+package com.root101.swing.material.standards;
 
-import com.jhw.swing.derivable_icons.IconTTF;
-import com.jhw.swing.derivable_icons.DerivableIcon;
-import com.jhw.swing.derivable_icons.IconSVG;
+import com.root101.swing.derivable_icons.IconTTF;
+import com.root101.swing.derivable_icons.DerivableIcon;
+import com.root101.swing.derivable_icons.IconSVG;
 import java.io.InputStream;
 
 //don't delete, it's for the coment at the end of the class
