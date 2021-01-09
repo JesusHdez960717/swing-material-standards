@@ -22,7 +22,7 @@ package com.root101.swing.material.standards;
  * @author JesusHdezWaterloo@Github
  */
 public class Utils {
-    
+
     public static final int HINT_OPACITY_MASK = 0x99000000;
     public static final int LINE_OPACITY_MASK = 0x66000000;
 }

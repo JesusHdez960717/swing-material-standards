@@ -29,7 +29,7 @@ import java.util.Map;
  * @see <a
  * href="https://www.google.com/design/spec/resources/roboto-noto-fonts.html">MaterialFontRoboto
  * &amp; Noto fonts (Google design guidelines)</a>
- * 
+ *
  * @author Root101 (jhernandezb96@gmail.com, +53-5-426-8660)
  * @author JesusHdezWaterloo@Github
  */
