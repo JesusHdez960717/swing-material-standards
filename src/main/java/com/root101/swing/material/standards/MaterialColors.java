@@ -24,7 +24,7 @@ import java.awt.*;
  * @see <a
  * href="https://www.google.com/design/spec/style/color.html#color-ui-color-palette">Color
  * (Google design guidelines)</a>
- * 
+ *
  * @author Root101 (jhernandezb96@gmail.com, +53-5-426-8660)
  * @author JesusHdezWaterloo@Github
  */
