@@ -89,7 +89,7 @@ public class MATERIAL_ICONS_EXAMPLE extends javax.swing.JFrame {
         this.add(panelBack);
 
         pack();
-    }                    
+    }
 
     public static void main(String args[]) throws UnsupportedLookAndFeelException {
         java.awt.EventQueue.invokeLater(new Runnable() {

@@ -26,7 +26,7 @@ import org.jdesktop.core.animation.timing.KeyFrames;
 /**
  * A renderer for Material shadows. Shadows are a sign of elevation, and help
  * distinguishing elements inside a Material-based GUI.
- * 
+ *
  * @author Root101 (jhernandezb96@gmail.com, +53-5-426-8660)
  * @author JesusHdezWaterloo@Github
  */
