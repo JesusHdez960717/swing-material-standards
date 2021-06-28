@@ -37,7 +37,7 @@ public class MaterialIconsFont {
 
     private static Font loadFont(String fontResourcePath) {
         if (fontSettings.isEmpty()) {
-            fontSettings.put(TextAttribute.SIZE, new Float(11 * Toolkit.getDefaultToolkit().getScreenResolution() / 72.0));
+            fontSettings.put(TextAttribute.SIZE, 11 * Toolkit.getDefaultToolkit().getScreenResolution() / 72.0);
             fontSettings.put(TextAttribute.KERNING, TextAttribute.KERNING_ON);
         }
 

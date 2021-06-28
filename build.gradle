@@ -4,7 +4,7 @@ plugins {
 
 group = 'com.root101.swing'
 
-version = '2.0.0.RELEASE.20210109'
+version = '3.0.0.SNAPSHOT.20210627'
 
 repositories {
     jcenter()
@@ -12,13 +12,13 @@ repositories {
 }
 
 dependencies {
-    testCompile 'junit:junit:4.13'
+     
 
     implementation project(':swing-derivable_icons')
     
     implementation 'com.twelvemonkeys.imageio:imageio-core:3.5'
     
-    compile group: 'org.swinglabs', name: 'swingx', version: '1.6.1'
+    implementation 'org.swinglabs:swingx:1.6.1'
     
     implementation 'net.java.timingframework:timingframework-swing:7.3.0'
 
