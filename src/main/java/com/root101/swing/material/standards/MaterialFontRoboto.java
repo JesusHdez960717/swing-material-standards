@@ -51,7 +51,7 @@ public class MaterialFontRoboto {
 
     private static Font loadFont(String fontPath) {
         if (fontSettings.isEmpty()) {
-            fontSettings.put(TextAttribute.SIZE, new Float(11 * Toolkit.getDefaultToolkit().getScreenResolution() / 72.0));
+            fontSettings.put(TextAttribute.SIZE, (float) (11 * Toolkit.getDefaultToolkit().getScreenResolution() / 72.0));
             fontSettings.put(TextAttribute.KERNING, TextAttribute.KERNING_ON);
         }
 
